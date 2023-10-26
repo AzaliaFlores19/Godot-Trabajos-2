@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://damv51dhu1lei"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_wg25g"]
+
+[node name="Mesh" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PrismMesh_wg25g")
