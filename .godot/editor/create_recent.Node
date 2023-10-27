@@ -1,1 +1,6 @@
+Sprite2D
+CharacterBody2D
+TileMap
+Node2D
+Node
 MeshInstance3D

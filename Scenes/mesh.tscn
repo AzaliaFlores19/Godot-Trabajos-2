@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://damv51dhu1lei"]
+[gd_scene load_steps=3 format=3 uid="uid://damv51dhu1lei"]
+
+[ext_resource type="Texture2D" uid="uid://bxxmq87jcwqm4" path="res://icon.svg" id="1_lyh6i"]
 
 [sub_resource type="PrismMesh" id="PrismMesh_wg25g"]
 
@@ -6,3 +8,16 @@
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("PrismMesh_wg25g")
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Node2D" type="Node2D" parent="Node"]
+
+[node name="TileMap" type="TileMap" parent="Node/Node2D"]
+format = 2
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Node/Node2D/TileMap"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node/Node2D/TileMap/CharacterBody2D"]
+position = Vector2(245, 101)
+texture = ExtResource("1_lyh6i")
